@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Palindrome Checker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Palindrome Checker</h1>
+      <div id="generate">
+        <input type="number" name="numOfChars" id="numOfChars" placeholder="Number of characters" />
+        <button type="button" onclick="generateBoxes();">Generate</button>
+      </div>
+      <div class="boxes" id="boxes"></div>
+      <div class="result">
+        <button hidden type="button" id="check" onclick="checkPalindrome();">Check</button>
+        <button hidden type="button" id="clear" onclick="clearInput();">Clear</button>
+        <button hidden type="button" id="reset" onclick="location.reload();">Reset</button>
+        <p id="result"></p>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
